@@ -1,0 +1,385 @@
+.intro {
+  width: 100%;
+  padding: 200px 0;
+  background-color: #0073c2;
+}
+.intro .intro-item {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.intro .intro-item .intro-title {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.intro .intro-item .intro-desc {
+  color: #eee;
+  margin-bottom: 40px;
+}
+.intro .intro-item .search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+}
+.intro .intro-item .search-box .search-select {
+  width: 20%;
+  background-color: #eee;
+  padding: 15px;
+  font-family: "medMsi";
+  border-radius: 50px;
+  box-sizing: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.intro .intro-item .search-box .search-select .default {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.intro .intro-item .search-box .search-select .icon {
+  font-size: 14px;
+  color: #454545;
+  font-weight: bold;
+}
+.intro .intro-item .search-box .search-select .icon i {
+  transition: all 0.3s ease-in-out;
+}
+.intro .intro-item .search-box .search-select .drop-menu {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  top: 110%;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 5px;
+  opacity: 0;
+  visibility: hidden;
+}
+.intro .intro-item .search-box .search-select .drop-menu li {
+  padding: 5px 10px;
+  text-align: right;
+  border-radius: 5px;
+}
+.intro .intro-item .search-box .search-select .drop-menu li:hover {
+  background-color: #0073c2;
+  color: #fff;
+}
+.intro .intro-item .search-box .search-select .drop-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.intro .intro-item .search-box .search-select:hover {
+  background-color: rgb(204, 201, 201);
+}
+.intro .intro-item .search-box .search-select.active {
+  box-shadow: 1px 0px 3px 1px rgb(109, 106, 106);
+}
+.intro .intro-item .search-box .search-select.active .icon i {
+  transform: rotate(180deg);
+}
+.intro .intro-item .search-box .search-value {
+  width: 70%;
+}
+.intro .intro-item .search-box .search-value input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: "medMsi";
+  font-size: 20px;
+}
+.intro .intro-item .search-box .search-value input::placeholder {
+  font-family: "medMsi";
+  word-spacing: 3px;
+}
+.intro .intro-item .search-box .submit {
+  background-color: none;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+}
+.intro .intro-item .search-box .submit .search-icon {
+  background-color: #E7B549;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.intro .intro-item .search-box .submit .search-icon i {
+  display: block;
+  color: #c27005;
+  font-size: 22px;
+  font-weight: 500;
+}
+.intro .intro-item .tags {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.intro .intro-item .tags ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.intro .intro-item .tags ul li {
+  font-size: 14px;
+}
+.intro .intro-item .tags ul li a {
+  color: #eee;
+}
+
+.categories {
+  width: 100%;
+}
+.categories .category-item {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: -100px;
+  transition: all 0.3s ease-in-out;
+  height: 300px;
+  position: relative;
+  z-index: 0;
+}
+.categories .category-item a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.categories .category-item a .category-item-img {
+  width: 100%;
+}
+.categories .category-item a .category-item-img img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+}
+.categories .category-item a .category-item-title {
+  padding: 30px 15px;
+}
+.categories .category-item a .category-item-title .name {
+  color: #454545;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.categories .category-item a .category-item-title .desc {
+  color: rgb(94, 89, 89);
+}
+.categories .category-item:hover {
+  transform: scale(1.03);
+}
+.categories .category-item.green {
+  background-color: #d7ffef;
+}
+.categories .category-item.red {
+  background-color: #ffe5ee;
+}
+
+.users {
+  width: 100%;
+  padding: 50px 0;
+  margin: 30px 0;
+}
+.users .users-count {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  color: #454545;
+}
+.users .company {
+  margin-top: 40px;
+}
+.users .company .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.users .company .item img {
+  width: 50%;
+}
+
+.discover {
+  padding: 50px 0;
+}
+.discover .title {
+  text-align: center;
+  margin-top: 40px;
+}
+.discover .title .text {
+  font-size: 30px;
+  color: #454545;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.discover .title .desc {
+  color: rgb(94, 89, 89);
+  margin-bottom: 20px;
+}
+.discover .title .discover-link {
+  background-color: #0073c2;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 40px;
+  border: solid 1px #0073c2;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+.discover .title .discover-link:hover {
+  background-color: #0663a1;
+}
+.discover .discover-item {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  border: solid 1px #eee;
+  border-radius: 10px;
+}
+.discover .discover-item a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+.discover .discover-item a .discover-item-img {
+  width: 100%;
+}
+.discover .discover-item a .discover-item-img img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+.discover .discover-item a .discover-item-video video {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.discover .discover-item a .discover-item-title {
+  padding: 10px;
+}
+.discover .discover-item a .discover-item-title .name {
+  color: #454545;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.discover .discover-item a .discover-item-title .desc {
+  font-size: 14px;
+  color: rgb(94, 89, 89);
+}
+.discover .discover-item:hover {
+  border-color: #0073c2;
+}
+.discover .discover-item:hover .discover-item-title .name {
+  color: #0073c2;
+}
+
+.back-color-linear {
+  background: linear-gradient(#eff0f7 20%, #fff 80%);
+}
+
+.recent-stories {
+  width: 100%;
+  padding: 50px 0;
+}
+.recent-stories .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recent-stories .title .text {
+  font-size: 26px;
+  color: #454545;
+  font-weight: bold;
+}
+.recent-stories .title .link {
+  background-color: #fff;
+  border: solid 1px rgb(211, 208, 208);
+  padding: 10px;
+  border-radius: 10px;
+  color: #454545;
+  transition: all 0.3s ease-in-out;
+}
+.recent-stories .title .link:hover {
+  background-color: rgb(202, 197, 197);
+}
+.recent-stories .stories {
+  margin-top: 40px;
+}
+
+.keywords {
+  width: 100%;
+  padding: 50px 0;
+}
+.keywords .title {
+  text-align: center;
+  font-size: 26px;
+  color: #454545;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.keywords .tab-filter {
+  width: 70%;
+  background-color: #f5f6fa;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.keywords .tab-filter ul {
+  width: 100%;
+  display: flex;
+}
+.keywords .tab-filter ul .tab {
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.keywords .tab-filter ul .tab.active {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(56, 55, 88, 0.1);
+}
+.keywords .result-keywords .keyword-item {
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.keywords .result-keywords .keyword-item a {
+  color: rgb(94, 89, 89);
+  transform: 0.3s ease;
+}
+.keywords .result-keywords .keyword-item a:hover {
+  color: #0073c2;
+}
+.keywords .result-keywords .keyword-item.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.keywords .result-keywords .keyword-item.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,213 @@
+.navbar {
+  position: initial;
+}
+
+.single-blog {
+  width: 100%;
+  padding: 20px 0;
+}
+.single-blog .single-blog-intro {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+.single-blog .single-blog-intro .source {
+  color: #0073c2;
+  margin: 10px 0;
+}
+.single-blog .single-blog-intro .name {
+  color: #454545;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.single-blog .single-blog-intro .desc {
+  color: rgb(94, 89, 89);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.single-blog .single-blog-intro .user {
+  text-align: center;
+}
+.single-blog .single-blog-intro .user .img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.single-blog .single-blog-intro .user .user-name {
+  font-weight: bold;
+  color: #454545;
+}
+.single-blog .single-blog-intro .user .publish-date {
+  font-size: 14px;
+  color: rgb(94, 89, 89);
+}
+.single-blog .single-blog-img {
+  width: 100%;
+  height: 660px;
+  text-align: center;
+}
+.single-blog .single-blog-img img {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  object-fit: cover;
+  object-position: center;
+}
+.single-blog .single-blog-desc {
+  padding: 40px;
+}
+.single-blog .single-blog-desc p {
+  color: #454545;
+  line-height: 60px;
+  font-size: 22px;
+}
+.single-blog .single-blog-item {
+  margin-bottom: 30px;
+}
+.single-blog .single-blog-item .title {
+  font-weight: bold;
+  font-size: 26px;
+  color: #454545;
+  margin: 15px 0;
+  padding: 0 80px;
+}
+.single-blog .single-blog-item .img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.single-blog .single-blog-item .img img {
+  width: 70%;
+  border-radius: 15px;
+  margin: auto;
+}
+.single-blog .single-blog-item .desc {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+}
+.single-blog .single-blog-item .desc p {
+  color: #454545;
+  line-height: 60px;
+  font-size: 22px;
+}
+.single-blog .more-product .title {
+  font-size: 26px;
+  margin: 5px 0;
+  color: #454545;
+  font-weight: bold;
+}
+.single-blog .more-product .desc {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+}
+.single-blog .more-product .desc p {
+  color: #454545;
+  line-height: 60px;
+  font-size: 22px;
+}
+.single-blog .more-product .link {
+  width: 100%;
+  text-align: center;
+}
+.single-blog .more-product .link a {
+  background-color: #0073c2;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.single-blog .more-product .link a:hover {
+  background-color: #0663a1;
+}
+.single-blog .quick-access {
+  width: 100%;
+  margin-top: 50px;
+  border-bottom: solid 1px rgb(209, 205, 205);
+  padding-bottom: 40px;
+}
+.single-blog .quick-access .links .tag {
+  display: flex;
+}
+.single-blog .quick-access .links .tag li {
+  margin-right: 10px;
+  border: solid 1px #999;
+  color: #454545;
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+.single-blog .quick-access .links .tag li a {
+  color: #454545;
+}
+.single-blog .quick-access .links .tag li:hover {
+  background-color: #eee;
+}
+.single-blog .quick-access .links .share {
+  display: flex;
+  align-items: center;
+}
+.single-blog .quick-access .links .share li {
+  margin-right: 10px;
+}
+.single-blog .quick-access .links .share li a img {
+  width: 25px;
+}
+.single-blog .quick-access .links .share .text {
+  color: rgb(94, 89, 89);
+  font-size: 14px;
+}
+.single-blog .quick-access .about-user {
+  margin-top: 50px;
+}
+.single-blog .quick-access .about-user .title {
+  color: rgb(94, 89, 89);
+  margin: 20px 0;
+}
+.single-blog .quick-access .about-user .user {
+  display: flex;
+  align-items: center;
+}
+.single-blog .quick-access .about-user .user .img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.single-blog .quick-access .about-user .user .desc {
+  margin-right: 10px;
+}
+.single-blog .quick-access .about-user .user .desc .user-name {
+  font-weight: bold;
+  color: #454545;
+}
+.single-blog .quick-access .about-user .user .desc .publish-date {
+  font-size: 14px;
+  color: rgb(94, 89, 89);
+}
+.single-blog .related-blog {
+  width: 100%;
+  margin: 40px 0;
+}
+.single-blog .related-blog .blog-item-title {
+  width: 100%;
+  text-align: center;
+  margin: 70px 0;
+}
+.single-blog .related-blog .blog-item-title .text {
+  font-weight: bold;
+  color: #454545;
+  font-size: 40px;
+}
+
+footer {
+  background: none;
+  padding: 0 0;
+}
+
+/*# sourceMappingURL=single-blog.css.map */

@@ -1,0 +1,14 @@
+$mainColor: #0073c2;
+$textColor: #454545;
+$whiteColor: #fff;
+$descColor : #F5F6FA;
+$lightColor: rgb(94, 89, 89);
+$backColor : #eff0f7;
+
+@mixin backLinearColor {
+    background: linear-gradient(#eff0f7 20%, #fff 80%);
+}
+
+@mixin backLinearColor2 {
+    background: linear-gradient(#fff, #eff0f7);
+}

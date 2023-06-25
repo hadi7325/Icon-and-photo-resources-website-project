@@ -1,0 +1,496 @@
+body {
+  position: relative;
+}
+
+.navbar {
+  position: inherit;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 11;
+}
+
+.user-account {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 90px;
+}
+.user-account .title {
+  text-align: center;
+  font-size: 35px;
+  color: #454545;
+  margin: 70px 0 30px 0;
+  font-weight: bold;
+}
+.user-account .title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 208px;
+  background: radial-gradient(160.14% 52.94% at 82.08% 35.54%, #e9f8fe 0%, rgba(205, 248, 251, 0) 100%);
+  z-index: -1;
+}
+.user-account .tab-account {
+  width: 100%;
+  border-bottom: solid 1px rgb(235, 232, 232);
+}
+.user-account .tab-account ul {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+.user-account .tab-account ul li {
+  padding: 10px;
+  color: #454545;
+  font-size: 18px;
+  cursor: pointer;
+}
+.user-account .tab-account ul li.active {
+  color: #000;
+  border-bottom: solid 1px #000;
+}
+.user-account .account-item {
+  display: none;
+}
+.user-account .account-item.active {
+  display: block;
+}
+.user-account .subscription-section {
+  width: 100%;
+  margin-top: 40px;
+}
+.user-account .subscription-section .subscription-section-item {
+  background-color: #F2F2FF;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.user-account .subscription-section .subscription-section-item .title {
+  text-align: right;
+  margin: 10px 0;
+  font-size: 20px;
+  color: #000;
+}
+.user-account .subscription-section .subscription-section-item .feature {
+  margin-top: 10px;
+}
+.user-account .subscription-section .subscription-section-item .feature .feature-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.user-account .subscription-section .subscription-section-item .feature .feature-item p {
+  margin-right: 5px;
+  color: rgb(94, 89, 89);
+}
+.user-account .subscription-section .subscription-section-item .feature .feature-item .check {
+  color: #24A8AF;
+}
+.user-account .subscription-section .subscription-section-item .feature .feature-item .times {
+  color: red;
+}
+.user-account .subscription-section .links {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.user-account .subscription-section .links a {
+  display: inline-block;
+  margin-top: 10px;
+}
+.user-account .details-section {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+.user-account .details-section .details-section-item {
+  padding: 20px;
+  width: 35%;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.user-account .details-section .details-section-item .img {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.user-account .details-section .details-section-item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user-account .details-section .details-section-item .img i {
+  position: absolute;
+  right: 60%;
+  top: 55%;
+  background-color: #fff;
+  color: #454545;
+  padding: 13px;
+  border-radius: 50%;
+  border: solid 1px #D8DBEB;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+.user-account .details-section .details-section-item .img i:active {
+  background-color: #F5F6FA;
+}
+.user-account .details-section .details-section-item .img:hover i {
+  display: flex;
+}
+.user-account .details-section .details-section-item .email-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+.user-account .details-section .details-section-item .email-box .email {
+  text-align: center;
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 70%;
+  direction: ltr;
+  border: solid 1px rgb(224, 222, 222);
+  font-family: "medMsi";
+  font-size: 17px;
+  border-radius: 7px 0 0 7px;
+}
+.user-account .details-section .details-section-item .email-box .email:focus {
+  box-shadow: 0 0 3px 1px #0073c2;
+}
+.user-account .details-section .details-section-item .email-box span {
+  border: solid 1px rgb(224, 222, 222);
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+  cursor: pointer;
+  border-left: none;
+  border-radius: 0px 7px 7px 0px;
+}
+.user-account .details-section .details-section-item .name-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+.user-account .details-section .details-section-item .name-box input {
+  width: 45%;
+  text-align: center;
+  padding: 10px;
+  outline: none;
+  border: solid 1px rgb(224, 222, 222);
+  border-radius: 7px;
+  font-family: "medMsi";
+  direction: ltr;
+}
+.user-account .details-section .details-section-item .name-box input:focus {
+  box-shadow: 0 0 3px 1px #0073c2;
+}
+.user-account .details-section .details-section-item .btn-change {
+  width: 100%;
+  background-color: #0073c2;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.user-account .details-section .details-section-item .change-pass {
+  margin-top: 10px;
+  display: inline-block;
+  color: #454545;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.user-account .details-section .details-section-item .change-pass:hover {
+  color: #0073c2;
+}
+.user-account .details-section .details-section-item .change-pass-popup {
+  width: 20%;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: #fff;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 12;
+}
+.user-account .details-section .details-section-item .change-pass-popup .title-popup {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-bottom: solid 1px #D8DBEB;
+  font-weight: bold;
+}
+.user-account .details-section .details-section-item .change-pass-popup .title-popup .img {
+  width: 100%;
+  text-align: center;
+}
+.user-account .details-section .details-section-item .change-pass-popup .title-popup i {
+  margin-right: 10px;
+  position: absolute;
+  left: 10%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.user-account .details-section .details-section-item .change-pass-popup form {
+  width: 100%;
+  padding: 10px;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .form-group label {
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .form-group input {
+  width: 100%;
+  margin: 5px 0;
+  border: none;
+  padding: 10px;
+  font-family: "medMsi";
+  border: solid 1px #D8DBEB;
+  border-radius: 5px;
+  outline: none;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .all-access {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: "medMsi";
+  font-size: 20px;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message {
+  width: 60vw;
+  position: fixed;
+  bottom: -15%;
+  right: -20vw;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message .text {
+  display: flex;
+  align-items: center;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message .text p {
+  color: #fff;
+  font-size: 18px;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message .text i {
+  color: #fff;
+  background-color: #DE524C;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message .close {
+  cursor: pointer;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message .close i {
+  color: #fff;
+  font-size: 20px;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message.error {
+  visibility: visible;
+  opacity: 1;
+}
+.user-account .details-section .details-section-item .change-pass-popup form .error-message.done {
+  visibility: hidden;
+  opacity: 0;
+}
+.user-account .details-section .details-section-item .change-pass-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+.user-account .details-section .details-section-item .links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.user-account .details-section .details-section-item .links a {
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.user-account .details-section .details-section-item .links a i {
+  margin-right: 10px;
+}
+.user-account .details-section .details-section-item .links a.facebook {
+  background-color: #084e7e;
+  font-size: 18px;
+}
+.user-account .details-section .details-section-item .links a.twitter {
+  background-color: #3b8fc7;
+  font-size: 18px;
+}
+.user-account .details-section .details-section-item .delete {
+  color: #DE524C;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 18px;
+}
+.user-account .details-section .details-section-item .delete:hover {
+  border-bottom: solid 1px #DE524C;
+}
+.user-account .details-section .details-section-item .change-message {
+  width: 60%;
+  position: fixed;
+  bottom: 10%;
+  right: 20%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.user-account .details-section .details-section-item .change-message .text {
+  display: flex;
+  align-items: center;
+}
+.user-account .details-section .details-section-item .change-message .text p {
+  color: #fff;
+  font-size: 18px;
+}
+.user-account .details-section .details-section-item .change-message .text i {
+  color: #fff;
+  background-color: rgb(8, 75, 8);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-account .details-section .details-section-item .change-message .close {
+  cursor: pointer;
+}
+.user-account .details-section .details-section-item .change-message .close i {
+  color: #fff;
+  font-size: 20px;
+}
+.user-account .download-section {
+  width: 100%;
+}
+.user-account .download-section .nav-filter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px rgb(235, 232, 232);
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.user-account .download-section .nav-filter .products {
+  width: 60%;
+  background-color: #F5F6FA;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+.user-account .download-section .nav-filter .products li {
+  color: #454545;
+  padding: 3px;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+}
+.user-account .download-section .nav-filter .products li.active {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(56, 55, 88, 0.1);
+  color: #000;
+}
+.user-account .download-section .nav-filter .search-box {
+  width: 40%;
+}
+.user-account .download-section .nav-filter .search-box form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.user-account .download-section .nav-filter .search-box form .search {
+  padding: 10px;
+  font-family: "medMsi";
+  border: none;
+  outline: none;
+  width: 80%;
+}
+.user-account .download-section .download-item {
+  margin: 50px 0;
+  display: none;
+}
+.user-account .download-section .download-item.active {
+  display: block;
+}
+
+footer {
+  background: none;
+  padding: 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=user.css.map */
